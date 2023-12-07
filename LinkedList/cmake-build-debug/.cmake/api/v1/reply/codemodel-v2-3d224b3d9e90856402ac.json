@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/seungwon-choi/Project/CProject/LinkedList/cmake-build-debug",
-		"source" : "/Users/seungwon-choi/Project/CProject/LinkedList"
+		"build" : "/Users/seungwon-choi/Github/CStudy/LinkedList/cmake-build-debug",
+		"source" : "/Users/seungwon-choi/Github/CStudy/LinkedList"
 	},
 	"version" : 
 	{

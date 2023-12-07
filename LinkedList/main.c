@@ -18,6 +18,39 @@ struct Node* createNode(int data) {
     return newNode;
 }
 
+struct Node* search(int data, struct Node* head) {
+    struct Node* current = head;
+    while (current != NULL) {
+
+        if (current -> data == data) {
+            return current;
+        }
+        current = current -> next;
+
+    }
+    printf("search failed.\n");
+    return NULL;
+}
+
+struct Node* searchAt(int index, struct Node* head) {
+
+    int count = 0;
+
+    struct Node* current = head;
+    while (current != NULL) {
+
+        if (index == count) {
+            return current;
+        }
+
+        current = current -> next;
+        count++;
+
+    }
+    printf("search failed.\n");
+    return NULL;
+}
+
 void printList(struct Node* head) {
     struct Node* current = head;
     while (current != NULL) {
@@ -27,26 +60,47 @@ void printList(struct Node* head) {
     printf("NULL\n");
 }
 
-void addNode(struct Node** head, int data) {
-    struct Node* newNode = createNode(data);
-    if (*head == NULL) {
-        *head = newNode;
+void add(struct Node* head, struct Node* new_node) {
+    struct Node* current = head;
+
+    while (current -> next != NULL) {
+        current = current -> next;
     }
-    else {
-        struct Node* current = *head;
-        while (current -> next != NULL) {
-            current = current -> next;
-        }
-        current -> next = newNode;
+
+    current -> next = new_node;
+    new_node->next = NULL;
+}
+
+void removeAt(int index, struct Node* head) {
+
+    struct Node* tmp = searchAt(index, head);
+
+    struct Node* prevTmp = searchAt(index - 1, head);
+
+    if (prevTmp != NULL) {
+        prevTmp -> next = tmp -> next;
     }
+
+    free(tmp);
 }
 
 int main() {
+
     struct Node* head = NULL;
+    struct Node* node = NULL;
+    struct Node* node2 = NULL;
+
+    node = createNode(25);
+    node2 = createNode(35);
 
     head = createNode(1);
     head -> next = createNode(2);
-    head -> next -> next = createNode(3);
+
+    add(head, node);
+
+    removeAt(1, head);
+
+    add(head, node2);
 
     printList(head);
 

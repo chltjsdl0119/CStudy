@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/seungwon-choi/Project/CProject/LinkedList/cmake-build-debug"
+			"value" : "/Users/seungwon-choi/Github/CStudy/LinkedList/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -383,7 +383,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/seungwon-choi/Project/CProject/LinkedList/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/seungwon-choi/Github/CStudy/LinkedList/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -443,7 +443,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/seungwon-choi/Project/CProject/LinkedList"
+			"value" : "/Users/seungwon-choi/Github/CStudy/LinkedList"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1031,7 +1031,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/seungwon-choi/Project/CProject/LinkedList/cmake-build-debug"
+			"value" : "/Users/seungwon-choi/Github/CStudy/LinkedList/cmake-build-debug"
 		},
 		{
 			"name" : "LinkedList_IS_TOP_LEVEL",
@@ -1055,7 +1055,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/seungwon-choi/Project/CProject/LinkedList"
+			"value" : "/Users/seungwon-choi/Github/CStudy/LinkedList"
 		}
 	],
 	"kind" : "cache",
