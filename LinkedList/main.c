@@ -18,6 +18,7 @@ struct Node* createNode(int data) {
     return newNode;
 }
 
+// 데이터로 노드를 탐색하는 함수
 struct Node* search(int data, struct Node* head) {
     struct Node* current = head;
     while (current != NULL) {
@@ -32,6 +33,7 @@ struct Node* search(int data, struct Node* head) {
     return NULL;
 }
 
+// 인덱스로 노드를 탐색하는 함수
 struct Node* searchAt(int index, struct Node* head) {
 
     int count = 0;
@@ -60,15 +62,15 @@ void printList(struct Node* head) {
     printf("NULL\n");
 }
 
-void add(struct Node* head, struct Node* new_node) {
+void add(struct Node* head, struct Node* newNode) {
     struct Node* current = head;
 
     while (current -> next != NULL) {
         current = current -> next;
     }
 
-    current -> next = new_node;
-    new_node->next = NULL;
+    current -> next = newNode;
+    newNode -> next = NULL;
 }
 
 void removeAt(int index, struct Node* head) {

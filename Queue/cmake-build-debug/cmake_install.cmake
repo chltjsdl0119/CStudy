@@ -1,4 +1,4 @@
-# Install script for directory: /Users/seungwon-choi/Project/CProject/Queue
+# Install script for directory: /Users/seungwon-choi/Github/CStudy/Queue
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/seungwon-choi/Project/CProject/Queue/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/seungwon-choi/Github/CStudy/Queue/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
